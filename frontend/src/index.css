@@ -1,0 +1,9 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8; /* Light gray background for the overall page */
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    font-size: 16px; /* 16px is the standard, readable default for browsers */
+    line-height: 1.5;
+}

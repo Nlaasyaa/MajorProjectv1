@@ -1,0 +1,78 @@
+/* frontend/src/components/History.module.css */
+
+.historyContainer {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+.historyTitle {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+.loading, .warning, .noHistory {
+    text-align: center;
+    padding: 20px;
+    color: #555;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+.historyCard {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #eee;
+}
+.cardTitle {
+    font-size: 16px;
+    font-weight: 600;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+.historyImage {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+.details {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.icon {
+    font-size: 20px;
+    color: #e53935;
+    flex-shrink: 0;
+}
+.label {
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+}
+.value {
+    font-size: 16px;
+    font-weight: bold;
+    color: #e53935;
+}
+.probability {
+    font-size: 13px;
+    color: #777;
+    margin: 0;
+}
+.date {
+    font-size: 11px;
+    color: #999;
+    margin-top: 5px;
+}

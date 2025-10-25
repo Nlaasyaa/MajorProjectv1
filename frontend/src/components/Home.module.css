@@ -1,0 +1,251 @@
+/* frontend/src/components/Home.module.css */
+
+.homeContainer {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+}
+.mainTitle {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #333;
+}
+.loginWarning {
+    background-color: #ffebee;
+    color: #d32f2f;
+    border: 1px solid #ef9a9a;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contentWrapper {
+    display: flex;
+    justify-content: center;
+}
+.uploadForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.uploadBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 150px;
+    border: 2px dashed #bbb;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    color: #555;
+    transition: all 0.2s;
+}
+.uploadBox:hover {
+    border-color: #1e88e5;
+    color: #1e88e5;
+}
+.uploadIcon {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.fileInput {
+    display: none;
+}
+.previewContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+.previewImage {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.predictButton {
+    padding: 12px 30px;
+    background-color: #1e88e5; /* Blue button */
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.predictButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+/* --- Prediction Result Styles (Two-Column Layout) --- */
+.resultContainer {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+.imageCard, .predictionCard {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+.cardTitle {
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.resultImage {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+.newScanButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #555;
+    cursor: pointer;
+    font-weight: 500;
+}
+.newScanIcon {
+    margin-right: 8px;
+}
+/* --- Prediction List Styling --- */
+.resultContainer {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+.imageCard, .predictionCard {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+.cardTitle {
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.resultImage {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+.newScanButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #555;
+    cursor: pointer;
+    font-weight: 500;
+}
+.newScanIcon {
+    margin-right: 8px;
+}
+/* --- Prediction List Styling --- */
+.predictionList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.predictionItem {
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f0f0f0;
+}
+.predictionItem > svg {
+    margin-top: 4px;
+}
+.itemLabel {
+    font-size: 14px;
+    color: #777;
+    display: block;
+}
+.itemValue {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+.itemDetail {
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+}
+.iconRed { color: #e53935; margin-right: 12px; font-size: 18px; }
+.iconGray { color: #9e9e9e; margin-right: 12px; font-size: 18px; }
+.iconOrange { color: #fb8c00; margin-right: 12px; font-size: 18px; }
+.iconBlue { color: #1e88e5; margin-right: 12px; font-size: 18px; }
+.iconPurple { color: #8e24aa; margin-right: 12px; font-size: 18px; }
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+    .resultContainer {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+/* frontend/src/components/Home.module.css */
+
+.homeContainer {
+    /* Existing styles */
+    max-width: 2000px; /* <- KEEP this max width for large screens */
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+
+    /* --- NEW ADDITION for Zoom Fix --- */
+    min-width: 350px; /* Prevents shrinking too much on small/zoomed out screens */
+}
+
+/* Ensure the upload button is sized based on viewport for responsiveness */
+.uploadBox {
+    /* Existing styles */
+    /* Update or verify this width/height */
+    width: 25vw; /* Set width relative to the viewport (e.g., 25% of viewport width) */
+    max-width: 200px; /* Don't get too big */
+    height: 150px; 
+    
+    /* Ensure text size scales reasonably */
+    font-size: 1.2rem; 
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #bbb;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+

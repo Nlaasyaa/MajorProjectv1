@@ -1,0 +1,102 @@
+.pageWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 60px); /* Adjusting for navbar height */
+    padding: 40px 0;
+}
+.authCard {
+    display: flex;
+    max-width: 450px;
+    width: 90%;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.illustrationPanel {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Optional: Add a light color background for contrast */
+    background-color: #f7f7f7; 
+}
+.illustrationImage {
+    max-width: 100%;
+    height: auto;
+}
+.formPanel {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.formTitle {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #333;
+}
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 5px;
+}
+.inputField {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.checkboxGroup {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.checkboxGroup input {
+    margin-right: 5px;
+}
+.loginButton {
+    padding: 12px;
+    background-color: #4CAF50; /* Green color from screenshot */
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.signupLink {
+    text-align: right;
+    font-size: 14px;
+    margin-top: 15px;
+}
+.errorText {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+/* Media Query for smaller screens */
+@media (max-width: 900px) {
+    .authCard {
+        flex-direction: column;
+        max-width: 450px;
+    }
+    .illustrationPanel {
+        display: none; /* Hide illustration on small screens */
+    }
+    .pageWrapper {
+        padding: 20px;
+    }
+}
